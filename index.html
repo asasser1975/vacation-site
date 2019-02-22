@@ -10,14 +10,14 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="jumbotron">Where Would You Like to Go?</h1>
+      <h1 class="jumbotron">Recommending a Vacation Spot for YOU!</h1>
 
       <!-- Questions div containers -->
 
       <!-- Question #1 - Climate -->
       <div id="q1">
         <form id="climate">
-          <h2 class="">WHAT IS YOUR PREFERENCE FOR CLIMATE AT YOUR LOCATION?</h2>
+          <h2 class="font-weight-bold bg-success">WHAT IS YOUR PREFERENCE FOR CLIMATE AT YOUR LOCATION?</h2>
           <div class="radio">
             <label>
               <input id="climice" type="radio" name="choice1" value="1" checked><p>Frigid</p>
@@ -43,12 +43,13 @@
               <input id="climnyc" type="radio" name="choice1" value="5"><p>Hot</p>
             </label>
           </div>
+          <button type="submit" class="btn btn-info">Next Question!</button>
         </form>
       </div>
       <!-- Question #2 - Weather -->
       <div class="hide" id="q2">
         <form id="weather">
-          <h2 class="">WHAT WEATHER WOULD YOU ENJOY WHEN AT YOUR LOCATION?</h2>
+          <h2 class="font-weight-bold bg-success">WHAT WEATHER WOULD YOU ENJOY WHEN AT YOUR LOCATION?</h2>
           <div class="radio">
             <label>
               <input id="weatherice" type="radio" name="choice2" value="1" checked><p>Snowy</p>
@@ -69,12 +70,13 @@
               <input id="weathernyc" type="radio" name="choice2" value="5"><p>Muggy</p> <!-- value of 5 to match NYC -->
             </label>
           </div>
+          <button type="submit" class="btn btn-info">Next Question!</button>
         </form>
       </div>
       <!-- Question #3 - Location Activity -->
       <div class="hide" id="q3">
         <form id="event">
-          <h2 class="">WHAT ARE YOU INTERESTED IN DOING WHEN AT YOUR LOCATION?</h2>
+          <h2 class="font-weight-bold bg-success">WHAT ARE YOU INTERESTED IN DOING WHEN AT YOUR LOCATION?</h2>
           <div class="radio">
             <label>
               <input id="eventice" type="radio" name="choice3" value="1" checked><p>Winter activities are my happy place!</p>
@@ -100,12 +102,13 @@
               <input id="eventnyc" type="radio" name="choice3" value="5"><p>Shopping and big city adventures are my thing!</p>
             </label>
           </div>
+          <button type="submit" class="btn btn-info">Next Question!</button>
         </form>
       </div>
       <!-- Question #4 - How hard to get to -->
       <div class="hide" id="q4">
         <form id="difficulty">
-          <h2 class="">HOW DIFFICULT DO YOU WANT IT TO BE TO GET TO YOUR LOCATION?</h2>
+          <h2 class="font-weight-bold bg-success">HOW DIFFICULT DO YOU WANT IT TO BE TO GET TO YOUR LOCATION?</h2>
           <div class="radio">
             <label>
               <input id="diffice" type="radio" name="choice4" value="1" checked><p>The middle of nowhere sounds good.</p>
@@ -131,12 +134,13 @@
               <input id="diffnyc" type="radio" name="choice4" value="5"><p>A guaranteed direct flight within the country, please.</p>
             </label>
           </div>
+          <button type="submit" class="btn btn-info">Next Question!</button>
         </form>
       </div>
       <!-- Question #5 - Cost at location -->
       <div class="hide" id="q5">
         <form id="cost">
-          <h2 class="">HOW MUCH DO YOU WANT THINGS TO COST AT YOUR LOCATION?</h2>
+          <h2 class="font-weight-bold bg-success">HOW MUCH DO YOU WANT THINGS TO COST AT YOUR LOCATION?</h2>
           <div class="radio">
             <label>
               <input id="costout" type="radio" name="choice5" value="2"><p>Keep it CHEAP!</p>
@@ -162,6 +166,7 @@
               <input id="costnyc" type="radio" name="choice5" value="5"><p>Money is no object - bring it!</p>
             </label>
           </div>
+          <button type="submit" class="btn btn-info">Results please!</button>
         </form>
       </div>
 
