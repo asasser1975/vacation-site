@@ -13,25 +13,25 @@ Muggy (NYC)  - 4
 
 
 WHAT EVENT?
-Outdoors call to me. (SEA)  - 3
-Shopping and civilization are my thing! (NYC)  - 5
-Winter is my happy place! (ICE)  - 1
+Both outdoor and city events call to me. (SEA)  - 3
+Shopping and big city adventures are my thing! (NYC)  - 5
+Winter activities are my happy place! (ICE)  - 1
 Gimme sand and surf, baby! (RDJ)  - 4
 I'm not happy until I'm knee-deep in mud or hiking in the wild wilderness. (OUT)  - 2
 
 HOW DIFFICULT TO GET TO?
-The middle of nowhere sounds good (OUT)  - 2
-Off the beaten path (ICE)  - 1
-Far away but still within a civilization (RDJ)  - 4
+The middle of nowhere sounds good. (OUT)  - 2
+Off the beaten path. (ICE)  - 1
+Far away but still within a civilization. (RDJ)  - 4
 One plane hop might be alright... (SEA)  - 3
-A guaranteed direct flight within the country is the way for me (NYC)  - 5
+A guaranteed direct flight within the country, please. (NYC)  - 5
 
 COST AT LOCATION?
 Keep it CHEAP! (OUT)  - 2
-I am on a budget that I'd like to adhere to (SEA)  - 3
-I budget but am willing to stretch for a fabulous opportunity (ICE)  - 1
-I can always make more money - vacation is about experiences (RDJ)  - 4
-Money is no object - bring it (NYC)  - 5
+I am on a budget that I'd like to adhere to. (SEA)  - 3
+I budget but am willing to stretch for a fabulous opportunity. (ICE)  - 1
+I can always make more money - vacation is about experiences! (RDJ)  - 4
+Money is no object - bring it! (NYC)  - 5
 
 
 
