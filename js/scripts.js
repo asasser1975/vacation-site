@@ -1,6 +1,7 @@
 // Backend (Business) Logic
-var result = q1 + q2 + q3 + q4 + q5 + q6;
-
+var result = function(q1answer, q2answer, q3answer, q4answer, q5answer, q6answer) {
+  return q1answer + q2answer + q3answer + q4answer + q5answer + q6answer;
+};
 
 // Front End Logic
 $(document).ready(function() {
