@@ -8,63 +8,62 @@ var add = function(q1answer, q2answer, q3answer, q4answer, q5answer, q6answer) {
 
 $(document).ready(function() {
 // Transition effects and apply hidden class to questions divs
-  $("button#climbtn").click(function() {
-    $("div#q1").removeClass("hide");
-    $("div#q1").addClass("hide");
-    $("div#q2").removeClass("hide");
-  });
+//  $("button#climatebutton").click(function() {
 
-  $("button#weatherbtn").click(function() {
-    $("div#q2").removeClass("hide");
-    $("div#q2").addClass("hide");
-    $("div#q3").removeClass("hide");
-  });
+//  });
 
-  $("button#eventbtn").click(function() {
-    $("div#q3").removeClass("hide");
-    $("div#q3").addClass("hide");
-    $("div#q4").removeClass("hide");
-  });
+//  $("button#weatherbutton").click(function() {
 
-  $("button#diffbtn").click(function() {
-    $("div#q4").removeClass("hide");
-    $("div#q4").addClass("hide");
-    $("div#q5").removeClass("hide");
-  });
+//  });
 
-  $("button#costbtn").click(function() {
-    $("div#q5").removeClass("hide");
-    $("div#q5").addClass("hide");
-  });
+//  $("button#eventbutton").click(function() {
+//  });
 
+//
 // Pull question answers
-// debugger;
-  $("form#climate").submit(function() {
+
+  var answer1 = $("form#climate").submit(function() {
+    event.preventDefault();
     var q1answer = $("input:radio[name=choice1]:checked").val();
     alert(q1answer);
-    event.preventDefault();
-  });
-  $("form#weather").submit(function() {
-    var q2answer = $("input:radio[name=choice2]:checked").val();
-    alert(q1answer);
-    alert(q2answer);
-    event.preventDefault();
-  });
-  $("form#event").submit(function() {
-    var q3answer = parseInt($("input:radio[name=choice3]:checked").val());
-    alert("Got Answer 3 number value = "(q3answer));
-    event.preventDefault();
-  });
-  $("form#difficulty").submit(function() {
-    var q4answer = parseInt($("input:radio[name=choice4]:checked").val());
-    alert("Got Answer 4 number value = "(q4answer));
-    event.preventDefault();
-  });
-  $("form#cost").submit(function(event) {
-    var q5answer = parseInt($("input:radio[name=choice5]:checked").val());
-    alert("Got Answer 5 number value = "(q5answer));
+    $("div#q1").addClass("hide");
+    $("div#q2").removeClass("hide");
+//    return q1answer;
 
-    var result = add(q1answer, q2answer, q3answer, q4answer, q5answer);
+  });
+
+  var answer2 = $("form#weather").submit(function() {
+    event.preventDefault();
+    alert(answer1);
+    var q2answer = $("input:radio[name=choice2]:checked").val();
+    $("div#q2").addClass("hide");
+    $("div#q3").removeClass("hide");
+    return q2answer;
+  });
+  var answer3 = $("form#event").submit(function() {
+    event.preventDefault();
+    alert(answer2);
+    var q3answer = parseInt($("input:radio[name=choice3]:checked").val());
+    $("div#q3").addClass("hide");
+    $("div#q4").removeClass("hide");
+    return q3answer;
+  });
+  var answer4 = $("form#difficulty").submit(function() {
+    event.preventDefault();
+    var q4answer = $("input:radio[name=choice4]:checked").val();
+    $("div#q4").addClass("hide");
+    $("div#q5").removeClass("hide");
+    return q4answer;
+  });
+
+  $("form#cost").submit(function(event) {
+    event.preventDefault();
+    var q5answer = parseInt($("input:radio[name=choice5]:checked").val());
+    $("div#q5").addClass("hide");
+
+
+    var result = parseInt(add(answer1, answer2, answer3, answer4, q5answer));
+
     if(result <= 8) {
       $('#iceland').show();
     } else if(result >= 9 && result <= 13) {
@@ -77,7 +76,7 @@ $(document).ready(function() {
       $('#nyc').show();
     }
 
-    event.preventDefault();
+
   });
 
 // Final ranking to reveal result div
