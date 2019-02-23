@@ -3,6 +3,9 @@ var add = function(q1answer, q2answer, q3answer, q4answer, q5answer, q6answer) {
   return q1answer + q2answer + q3answer + q4answer + q5answer + q6answer;
 };
 
+//function answercalculation(x) {
+
+//}
 // Front End Logic
 
 
@@ -28,8 +31,7 @@ $(document).ready(function() {
     alert(q1answer);
     $("div#q1").addClass("hide");
     $("div#q2").removeClass("hide");
-//    return q1answer;
-
+    return q1answer;
   });
 
   var answer2 = $("form#weather").submit(function() {
@@ -38,16 +40,19 @@ $(document).ready(function() {
     var q2answer = $("input:radio[name=choice2]:checked").val();
     $("div#q2").addClass("hide");
     $("div#q3").removeClass("hide");
+    alert(q2answer);
     return q2answer;
   });
+
   var answer3 = $("form#event").submit(function() {
     event.preventDefault();
     alert(answer2);
-    var q3answer = parseInt($("input:radio[name=choice3]:checked").val());
+    var q3answer = $("input:radio[name=choice3]:checked").val();
     $("div#q3").addClass("hide");
     $("div#q4").removeClass("hide");
     return q3answer;
   });
+
   var answer4 = $("form#difficulty").submit(function() {
     event.preventDefault();
     var q4answer = $("input:radio[name=choice4]:checked").val();
@@ -58,7 +63,7 @@ $(document).ready(function() {
 
   $("form#cost").submit(function(event) {
     event.preventDefault();
-    var q5answer = parseInt($("input:radio[name=choice5]:checked").val());
+    var q5answer = $("input:radio[name=choice5]:checked").val();
     $("div#q5").addClass("hide");
 
 
