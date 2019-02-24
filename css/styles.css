@@ -1,7 +1,23 @@
+body {
+  background-image: url('../img/beach1.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.background-blue {
+  background-color: #337ab7;
+}
+
 .hide {
   display: none;
 }
 
 img.maxwidth {
-  max-width: 350px;
+  max-width: 500px;
+}
+
+.location-margin {
+  margin-top: 20px;
+  padding: 5px;
 }
