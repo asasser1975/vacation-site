@@ -1,3 +1,7 @@
 .hide {
   display: none;
 }
+
+img.maxwidth {
+  max-width: 350px;
+}
