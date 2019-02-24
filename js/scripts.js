@@ -6,7 +6,6 @@ var add = function(q1answer, q2answer, q3answer, q4answer, q5answer) {
 // Front End Logic
 $(document).ready(function() {
   $("form#questions").submit(function() {
-    debugger;
     var q1answer = parseInt($("input:radio[name=choice1]:checked").val());
     var q2answer = parseInt($("input:radio[name=choice2]:checked").val());
     var q3answer = parseInt($("input:radio[name=choice3]:checked").val());
