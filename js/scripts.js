@@ -5,7 +5,29 @@ var add = function(q1answer, q2answer, q3answer, q4answer, q5answer) {
 
 // Front End Logic
 $(document).ready(function() {
-  $("form#questions").submit(function() {
+  $("#clickbuttonq1").click(function() {
+    $("#q1").slideToggle();
+    $("#q2").removeClass("hide");
+  });
+
+  $("#clickbuttonq2").click(function() {
+    $("#q2").slideToggle();
+    $("#q3").removeClass("hide");
+  });
+
+  $("#clickbuttonq3").click(function() {
+    $("#q3").slideToggle();
+    $("#q4").removeClass("hide");
+  });
+
+  $("#clickbuttonq4").click(function() {
+    $("#q4").slideToggle();
+    $("#q5").removeClass("hide");
+    $("#findout").removeClass("hide");
+  });
+
+
+  $("form#question").submit(function() {
     var q1answer = parseInt($("input:radio[name=choice1]:checked").val());
     var q2answer = parseInt($("input:radio[name=choice2]:checked").val());
     var q3answer = parseInt($("input:radio[name=choice3]:checked").val());

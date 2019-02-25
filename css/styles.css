@@ -13,6 +13,25 @@ body {
   display: none;
 }
 
+.padding {
+  padding: 0 .5em 1em .5em;
+}
+
+.padding-question-headers {
+  padding: 0.25em 0.25em 0.25em 0.25em;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.shadow-question-headers {
+  box-shadow: -5px 5px 5px 0px gray;
+}
+
+.shadow-buttons {
+  box-shadow: -5px 5px 5px 0px gray;
+}
+
 img.maxwidth {
   max-width: 500px;
 }

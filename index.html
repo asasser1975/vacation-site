@@ -17,149 +17,152 @@
       </div>
 
       <!-- Questions div containers -->
-
       <form id="questions">
-      <!-- Question #1 - Climate -->
-      <div id="q1">
-        <h2 class="font-weight-bold bg-primary">WHAT IS YOUR PREFERENCE FOR CLIMATE AT YOUR LOCATION?</h2>
-        <div class="radio">
-          <label>
-            <input id="climice" type="radio" name="choice1" value="1" checked><p>Frigid</p>
-          </label>
+        <!-- Question #1 - Climate -->
+        <div class="padding" id="q1">
+          <h2 class="font-weight-bold bg-primary padding-question-headers shadow-question-headers">WHAT IS YOUR PREFERENCE FOR CLIMATE AT YOUR LOCATION?</h2>
+          <div class="radio">
+            <label>
+              <input id="climice" type="radio" name="choice1" value="1" checked><p>Frigid</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="climout" type="radio" name="choice1" value="2"><p>Arid</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="climsea" type="radio" name="choice1" value="3"><p>Temperate</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="climrio" type="radio" name="choice1" value="4"><p>Tropical</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="climnyc" type="radio" name="choice1" value="5"><p>Hot</p>
+            </label>
+          </div>
+          <button type="button" id="clickbuttonq1" class="btn btn-success shadow-buttons">Next Question</button>
         </div>
-        <div class="radio">
-          <label>
-            <input id="climout" type="radio" name="choice1" value="2"><p>Arid</p>
-          </label>
+        <!-- Question #2 - Weather -->
+        <div class="hide padding" id="q2">
+          <h2 class="font-weight-bold bg-primary padding-question-headers shadow-question-headers">WHAT WEATHER WOULD YOU ENJOY WHEN AT YOUR LOCATION?</h2>
+          <div class="radio">
+            <label>
+              <input id="weatherice" type="radio" name="choice2" value="1" checked><p>Snowy</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="weathersea" type="radio" name="choice2" value="2"><p>Rainy</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="weatheroutrio" type="radio" name="choice2" value="3"><p>Sunny</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="weathernyc" type="radio" name="choice2" value="5"><p>Muggy</p> <!-- value of 5 to match NYC -->
+            </label>
+          </div>
+          <button type="button" id="clickbuttonq2" class="btn btn-success shadow-buttons">Next Question</button>
         </div>
-        <div class="radio">
-          <label>
-            <input id="climsea" type="radio" name="choice1" value="3"><p>Temperate</p>
-          </label>
+        <!-- Question #3 - Location Activity -->
+        <div class="hide padding" id="q3">
+          <h2 class="font-weight-bold bg-primary padding-question-headers shadow-question-headers">WHAT ARE YOU INTERESTED IN DOING WHEN AT YOUR LOCATION?</h2>
+          <div class="radio">
+            <label>
+              <input id="eventice" type="radio" name="choice3" value="1" checked><p>Winter activities are my happy place!</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="eventout" type="radio" name="choice3" value="2"><p>I'm not happy until I'm knee-deep in mud or hiking in the wild wilderness.</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="eventsea" type="radio" name="choice3" value="3"><p>Both outdoor and city events call to me.</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="eventrio" type="radio" name="choice3" value="4"><p>Gimme sand and surf, baby!</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="eventnyc" type="radio" name="choice3" value="5"><p>Shopping and big city adventures are my thing!</p>
+            </label>
+          </div>
+          <button type="button" id="clickbuttonq3" class="btn btn-success shadow-buttons">Next Question</button>
         </div>
-        <div class="radio">
-          <label>
-            <input id="climrio" type="radio" name="choice1" value="4"><p>Tropical</p>
-          </label>
+        <!-- Question #4 - How hard to get to -->
+        <div class="hide padding" id="q4">
+          <h2 class="font-weight-bold bg-primary padding-question-headers shadow-question-headers">HOW DIFFICULT DO YOU WANT IT TO BE TO GET TO YOUR LOCATION?</h2>
+          <div class="radio">
+            <label>
+              <input id="diffice" type="radio" name="choice4" value="1" checked><p>The middle of nowhere sounds good.</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="diffout" type="radio" name="choice4" value="2"><p>Off the beaten path.</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="diffsea" type="radio" name="choice4" value="3"><p>One plane hop might be alright...</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="diffrio" type="radio" name="choice4" value="4"><p>Far away but still within a civilization.</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="diffnyc" type="radio" name="choice4" value="5"><p>A guaranteed direct flight within the country, please.</p>
+            </label>
+          </div>
+          <button type="button" id="clickbuttonq4" class="btn btn-success shadow-buttons">Next Question</button>
         </div>
-        <div class="radio">
-          <label>
-            <input id="climnyc" type="radio" name="choice1" value="5"><p>Hot</p>
-          </label>
+        <!-- Question #5 - Cost at location -->
+        <div class="hide padding" id="q5">
+          <h2 class="font-weight-bold bg-primary padding-question-headers shadow-question-headers">HOW MUCH DO YOU WANT THINGS TO COST AT YOUR LOCATION?</h2>
+          <div class="radio">
+            <label>
+              <input id="costout" type="radio" name="choice5" value="2" checked><p>Keep it CHEAP!</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="costsea" type="radio" name="choice5" value="3"><p>I am on a budget that I'd like to adhere to.</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="costice" type="radio" name="choice5" value="1"><p>I budget but am willing to stretch for a fabulous opportunity.</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="costrio" type="radio" name="choice5" value="4"><p>I can always make more money - vacation is about experiences!</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="costnyc" type="radio" name="choice5" value="5"><p>Money is no object - bring it!</p>
+            </label>
+          </div>
         </div>
-      </div>
-      <!-- Question #2 - Weather -->
-      <div class="" id="q2">
-        <h2 class="font-weight-bold bg-primary">WHAT WEATHER WOULD YOU ENJOY WHEN AT YOUR LOCATION?</h2>
-        <div class="radio">
-          <label>
-            <input id="weatherice" type="radio" name="choice2" value="1" checked><p>Snowy</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="weathersea" type="radio" name="choice2" value="2"><p>Rainy</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="weatheroutrio" type="radio" name="choice2" value="3"><p>Sunny</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="weathernyc" type="radio" name="choice2" value="5"><p>Muggy</p> <!-- value of 5 to match NYC -->
-          </label>
-        </div>
-      </div>
-      <!-- Question #3 - Location Activity -->
-      <div class="" id="q3">
-        <h2 class="font-weight-bold bg-primary">WHAT ARE YOU INTERESTED IN DOING WHEN AT YOUR LOCATION?</h2>
-        <div class="radio">
-          <label>
-            <input id="eventice" type="radio" name="choice3" value="1" checked><p>Winter activities are my happy place!</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="eventout" type="radio" name="choice3" value="2"><p>I'm not happy until I'm knee-deep in mud or hiking in the wild wilderness.</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="eventsea" type="radio" name="choice3" value="3"><p>Both outdoor and city events call to me.</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="eventrio" type="radio" name="choice3" value="4"><p>Gimme sand and surf, baby!</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="eventnyc" type="radio" name="choice3" value="5"><p>Shopping and big city adventures are my thing!</p>
-          </label>
-        </div>
-      </div>
-      <!-- Question #4 - How hard to get to -->
-      <div class="" id="q4">
-        <h2 class="font-weight-bold bg-primary">HOW DIFFICULT DO YOU WANT IT TO BE TO GET TO YOUR LOCATION?</h2>
-        <div class="radio">
-          <label>
-            <input id="diffice" type="radio" name="choice4" value="1" checked><p>The middle of nowhere sounds good.</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="diffout" type="radio" name="choice4" value="2"><p>Off the beaten path.</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="diffsea" type="radio" name="choice4" value="3"><p>One plane hop might be alright...</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="diffrio" type="radio" name="choice4" value="4"><p>Far away but still within a civilization.</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="diffnyc" type="radio" name="choice4" value="5"><p>A guaranteed direct flight within the country, please.</p>
-          </label>
-        </div>
-      </div>
-      <!-- Question #5 - Cost at location -->
-      <div class="" id="q5">
-        <h2 class="font-weight-bold bg-primary">HOW MUCH DO YOU WANT THINGS TO COST AT YOUR LOCATION?</h2>
-        <div class="radio">
-          <label>
-            <input id="costout" type="radio" name="choice5" value="2" checked><p>Keep it CHEAP!</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="costsea" type="radio" name="choice5" value="3"><p>I am on a budget that I'd like to adhere to.</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="costice" type="radio" name="choice5" value="1"><p>I budget but am willing to stretch for a fabulous opportunity.</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="costrio" type="radio" name="choice5" value="4"><p>I can always make more money - vacation is about experiences!</p>
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="costnyc" type="radio" name="choice5" value="5"><p>Money is no object - bring it!</p>
-          </label>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-info">Find out where to go!</button>
+        <button type="submit" class="btn btn-info hide shadow-buttons" id="findout">Find out where to go!</button>
       </form>
 
       <!-- Final Destination div containers -->
