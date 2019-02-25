@@ -74,7 +74,7 @@
           <button type="button" id="clickbuttonq2" class="btn btn-success shadow-buttons">Next Question</button>
         </div>
         <!-- Question #3 - Location Activity -->
-        <div class="hide padding" id="q3">
+        <div class="padding hide" id="q3">
           <h2 class="font-weight-bold bg-primary padding-question-headers shadow-question-headers">WHAT ARE YOU INTERESTED IN DOING WHEN AT YOUR LOCATION?</h2>
           <div class="radio">
             <label>
@@ -104,7 +104,7 @@
           <button type="button" id="clickbuttonq3" class="btn btn-success shadow-buttons">Next Question</button>
         </div>
         <!-- Question #4 - How hard to get to -->
-        <div class="hide padding" id="q4">
+        <div class="padding hide" id="q4">
           <h2 class="font-weight-bold bg-primary padding-question-headers shadow-question-headers">HOW DIFFICULT DO YOU WANT IT TO BE TO GET TO YOUR LOCATION?</h2>
           <div class="radio">
             <label>
@@ -134,7 +134,7 @@
           <button type="button" id="clickbuttonq4" class="btn btn-success shadow-buttons">Next Question</button>
         </div>
         <!-- Question #5 - Cost at location -->
-        <div class="hide padding" id="q5">
+        <div class="padding hide" id="q5">
           <h2 class="font-weight-bold bg-primary padding-question-headers shadow-question-headers">HOW MUCH DO YOU WANT THINGS TO COST AT YOUR LOCATION?</h2>
           <div class="radio">
             <label>
@@ -162,48 +162,50 @@
             </label>
           </div>
         </div>
-        <button type="submit" class="btn btn-info hide shadow-buttons" id="findout">Find out where to go!</button>
+        <button type="submit" class="btn btn-info hide shadow-buttons " id="findout">Find out where to go!</button>
       </form>
 
       <!-- Final Destination div containers -->
-      <div class="hide" id="outback">
-        <h1 class="display-4 jumbotron text-center">Australian Outback</h1>
-        <div class="text-center">
-          <img src="img/outback.jpg" class="img-fluid maxwidth img-rounded" alt="Picture of the Australian Outback.">
+      <div id="resultdiv">
+        <div class="hide" id="outback">
+          <h1 class="display-4 jumbotron text-center background-yellow">Australian Outback</h1>
+          <div class="text-center">
+            <img src="img/outback.jpg" class="img-fluid maxwidth img-rounded" alt="Picture of the Australian Outback.">
+          </div>
+          <p class="text-justify lead bg-info location-margin">G'day mate! You enjoy roughing it in one of the most remote areas of the world. In the Australian Outback, you will see kangaroos, snakes, spiders, and other assorted animals and insects and arachnids that can kill you. Bring something to protect you (bug spray, knives, other people to throw in front of you so you don't get hurt) and lots of equipment for roughing it and you'll have a blast!</p>
         </div>
-        <p class="text-justify lead bg-info location-margin">G'day mate! You enjoy roughing it in one of the most remote areas of the world. In the Australian Outback, you will see kangaroos, snakes, spiders, and other assorted animals and insects and arachnids that can kill you. Bring something to protect you (bug spray, knives, other people to throw in front of you so you don't get hurt) and lots of equipment for roughing it and you'll have a blast!</p>
-      </div>
 
-      <div class="location hide" id="iceland">
-        <h1 class="display-4 jumbotron text-center">Iceland</h1>
-        <div class="text-center">
-          <img src="img/iceland.jpg" class="img-fluid maxwidth img-rounded" alt="Picture of Iceland.">
+        <div class="location hide" id="iceland">
+          <h1 class="display-4 jumbotron text-center background-yellow">Iceland</h1>
+          <div class="text-center">
+            <img src="img/iceland.jpg" class="img-fluid maxwidth img-rounded" alt="Picture of Iceland.">
+          </div>
+          <p class="text-justify lead bg-info location-margin">Hall&oacute;! You love snow, cold, and beautiful landscapes. Iceland is the place for you. A little out of the way, but completely worth going. You'll enjoy the scenery, the people, and the weather, which is nicer than you may think! Bring your warm clothes and a sunny disposition!</p>
         </div>
-        <p class="text-justify lead bg-info location-margin">Hall&oacute;! You love snow, cold, and beautiful landscapes. Iceland is the place for you. A little out of the way, but completely worth going. You'll enjoy the scenery, the people, and the weather, which is nicer than you may think! Bring your warm clothes and a sunny disposition!</p>
-      </div>
 
-      <div class="location hide" id="nyc">
-        <h1 class="display-4 jumbotron text-center">New York City</h1>
-        <div class="text-center">
-          <img src="img/nyc.jpg" class="img-fluid maxwidth img-rounded" alt="Picture of New York City skyline.">
+        <div class="location hide" id="nyc">
+          <h1 class="display-4 jumbotron text-center background-yellow">New York City</h1>
+          <div class="text-center">
+            <img src="img/nyc.jpg" class="img-fluid maxwidth img-rounded" alt="Picture of New York City skyline.">
+          </div>
+          <p class="text-justify lead bg-info location-margin">Welcome to New York! The bustling city that never sleeps, a shopping mecca, and full of diverse things to do and see. You will enjoy being in the center of one of the largest cities in the world, with all the amenities and sights that go along with that. Pack for muggy weather - it can get humid in the summer - and don't forget your wallet because it is EXPENSIVE!</p>
         </div>
-        <p class="text-justify lead bg-info location-margin">Welcome to New York! The bustling city that never sleeps, a shopping mecca, and full of diverse things to do and see. You will enjoy being in the center of one of the largest cities in the world, with all the amenities and sights that go along with that. Pack for muggy weather - it can get humid in the summer - and don't forget your wallet because it is EXPENSIVE!</p>
-      </div>
 
-      <div class="location hide" id="rio">
-        <h1 class="display-4 jumbotron text-center">Rio de Janerio</h1>
-        <div class="text-center">
-          <img src="img/rdj.jpg" class="img-fluid maxwidth img-rounded" alt="Picture of Rio de Janeiro.">
+        <div class="location hide" id="rio">
+          <h1 class="display-4 jumbotron text-center background-yellow">Rio de Janerio</h1>
+          <div class="text-center">
+            <img src="img/rdj.jpg" class="img-fluid maxwidth img-rounded" alt="Picture of Rio de Janeiro.">
+          </div>
+          <p class="text-justify lead bg-info location-margin">&#161;Ol&aacute;! Welcome to the land of sun, surf, sand, and sun! Did we mention sun? You love living it up at the beach and are equally at home in the big city. Tourist attractions will be a fabulous side-benefit to this trip. Don't forget to check out the Olympic facilities left behind from the recent Olympics. Bring beach clothes and keep an eye on your belongings - Rio has a reputation for pickpockets!</p>
         </div>
-        <p class="text-justify lead bg-info location-margin">&#161;Ol&aacute;! Welcome to the land of sun, surf, sand, and sun! Did we mention sun? You love living it up at the beach and are equally at home in the big city. Tourist attractions will be a fabulous side-benefit to this trip. Don't forget to check out the Olympic facilities left behind from the recent Olympics. Bring beach clothes and keep an eye on your belongings - Rio has a reputation for pickpockets!</p>
-      </div>
 
-      <div class="location hide" id="sea">
-        <h1 class="display-4 jumbotron text-center">Seattle</h1>
-        <div class="text-center">
-          <img src="img/seattle.jpg" class="img-fluid maxwidth img-rounded" alt="Picture of Seattle.">
+        <div class="location hide" id="sea">
+          <h1 class="display-4 jumbotron text-center background-yellow">Seattle</h1>
+          <div class="text-center">
+            <img src="img/seattle.jpg" class="img-fluid maxwidth img-rounded" alt="Picture of Seattle.">
+          </div>
+          <p class="text-justify lead bg-info location-margin">Hey there! Welcome to Seattle, a city notorious for rain and outdoor life. The Pacific Northwest has lots to do out of doors, and it is all a short 30 minute drive from Seattle (unless the traffic, which is poor, holds you up). Rain or shine, people in the Northwest love getting out as much as their coffee. Be sure to visit Pike's Marketplace and enjoy the waterfront. Shh - Seattle is an unknown location for visiting and it doesn't rain as much as you may think.</p>
         </div>
-        <p class="text-justify lead bg-info location-margin">Hey there! Welcome to Seattle, a city notorious for rain and outdoor life. The Pacific Northwest has lots to do out of doors, and it is all a short 30 minute drive from Seattle (unless the traffic, which is poor, holds you up). Rain or shine, people in the Northwest love getting out as much as their coffee. Be sure to visit Pike's Marketplace and enjoy the waterfront. Shh - Seattle is an unknown location for visiting and it doesn't rain as much as you may think.</p>
       </div>
     </div>
   </body>

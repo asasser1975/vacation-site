@@ -32,6 +32,14 @@ body {
   box-shadow: -5px 5px 5px 0px gray;
 }
 
+#findout {
+  margin-bottom: 15px;
+}
+
+.background-yellow {
+  background-color: yellow;
+}
+
 img.maxwidth {
   max-width: 500px;
 }
